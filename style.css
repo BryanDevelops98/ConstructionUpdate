@@ -146,3 +146,14 @@ transform: rotate(-45deg) translate(-5px,6px);
     height: 400px;
     object-fit: cover;
   }
+  .ftlogo{
+    padding:0px 20px 10px
+}
+.hoverAnim:hover { 
+    transform: scale(1.1,1.1);
+    transition: transform .25s;
+    }
+.paragraph{
+        color: #aaa;
+          font-size: 18px;  
+}
