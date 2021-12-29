@@ -72,9 +72,10 @@ nav{
         margin-top: 25px;
     }
     .nav-links{
+        width:10%;
         position: absolute;
         right: 0px;
-        height: 100vh;
+        height: 50vh;
         margin-top: 0rem;
         top:8vh;
         background-color: black;
@@ -97,6 +98,7 @@ nav{
 
 .nav-active{
     transform: translateX(0%);
+  
 }
 @keyframes navLinkFade {
     from{
@@ -121,7 +123,9 @@ transform: rotate(-45deg) translate(-5px,6px);
     
     
 }
-
+#firstSection{
+  margin-top: 48px;
+}
 .imgClass{
     width: 100%;
     height: 475px;
@@ -157,3 +161,186 @@ transform: rotate(-45deg) translate(-5px,6px);
         color: #aaa;
           font-size: 18px;  
 }
+@media screen and (max-width:991.5px){
+    .card{
+        margin: 100px auto 0;
+        width: 600px !important;
+        height: 450px;
+        perspective: 1000px;
+        border: none;
+      
+    }
+    .card__face{
+      position: absolute;
+      width: 600px !important;
+      height: 450px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      overflow: hidden;
+      border-radius: 16;
+      box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+    }
+}
+@media screen and (max-width:768px){
+  .card{
+      margin: 100px auto 0;
+      width: 450px !important;
+      height: 450px;
+      perspective: 1000px;
+      border: none;
+    
+  }
+  .card__face{
+    position: absolute;
+    width: 450px !important;
+    height: 450px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16;
+    box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+  }
+}
+@media screen and (max-width:576px){
+  .card{
+      margin: 100px auto 0;
+      width: 350px !important;
+      height: 450px;
+      perspective: 1000px;
+      border: none;
+    
+  }
+  .card__face{
+    position: absolute;
+    width: 350px !important;
+    height: 450px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16;
+    box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+  }
+}
+.card{
+    margin: 100px auto 0;
+    width: 315px;
+    height: 450px;
+    perspective: 1000px;
+    border: none;
+  
+}
+.card__face{
+  position: absolute;
+  width: 315px;
+  height: 450px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16;
+  box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+}
+  
+  .card__inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+  .card__inner.is-flipped{
+    transform:rotateY(180deg);
+  
+}
+ 
+  .card__body{
+    padding: 30px;
+    
+  }
+  
+  .card__faceBack{
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+  .card__content{
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .card__header{
+    position: relative;
+    padding: 10px;
+  }
+  .card__header:after{
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    }
+    .pp{
+        display: block;
+        width: 128px;
+        height:128px;
+        margin: 0 auto 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 5px solid  #fff;
+        object-fit: cover;
+    }
+    
+    .staffImg{
+        display: block;
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto 30px;
+        object-fit: cover;
+        padding-top: 10px;
+      }
+
+      .cardContainer{
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+      }
+      .top-left {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+
+      .cssFooter{
+   
+        background-image: url('img/footer.jpg');
+        background-color: #0005; 
+        background-blend-mode: darken;
+        box-shadow: inset 0px 0px 400px 200px rgb(0, 0, 0);
+      
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 20px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        
+      }
+      .inline{
+        display:inline-block !important;
+        padding: 10px;
+      }
+      .copyright{
+        color: #aaa;
+        font-size: 13px;
+    }
