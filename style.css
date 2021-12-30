@@ -337,7 +337,7 @@ transform: rotate(-45deg) translate(-5px,6px);
         
       }
       .inline{
-        display:inline-block !important;
+        display:inline-block!important;
         padding: 10px;
       }
       .copyright{
