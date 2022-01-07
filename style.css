@@ -8,6 +8,11 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     
 }
+.aLinks{
+text-decoration: none;
+color: #0072bd;
+}
+
 nav{
     z-index: 9999;
     position: fixed;
@@ -17,14 +22,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: black;
+    background-color:#F8F8F8;
+    box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
+
 }
 
 .logo{
-    color: whitesmoke;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+  height: 30px;
+  width: 75px;
+    object-fit: cover;
 }
 .nav-links{
     margin-top: .5rem;
@@ -35,16 +41,19 @@ nav{
 .nav-links :hover{
     transform: scale(1.1,1.1);
     transition: transform .25s;
-    color:wheat;
+    color:#0072bd;
+    font-weight:bold  ;
 }
 .nav-links li{
     list-style: none;
 }
 .nav-links a{
-    color: whitesmoke;
+    color: #0072bd;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+
 }
 .burger{
     display: none;
@@ -53,7 +62,7 @@ nav{
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: whitesmoke;
+    background-color: #0072bd;
     transition: all 0.4s ease-in;
 }
 
@@ -78,7 +87,7 @@ nav{
         height: 50vh;
         margin-top: 0rem;
         top:8vh;
-        background-color: black;
+        background-color: #F8F8F8;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -135,8 +144,8 @@ transform: rotate(-45deg) translate(-5px,6px);
 
    .buttonClass{
     color: white;
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #0072bd;
+    border-color: #0072bd;
   
   }
   .buttonClass:hover{
@@ -321,10 +330,8 @@ transform: rotate(-45deg) translate(-5px,6px);
 
       .cssFooter{
    
-        background-image: url('img/footer.jpg');
-        background-color: #0005; 
+        background-color:black; 
         background-blend-mode: darken;
-        box-shadow: inset 0px 0px 400px 200px rgb(0, 0, 0);
       
         position: relative;
         bottom: 0;
@@ -350,21 +357,18 @@ transform: rotate(-45deg) translate(-5px,6px);
     height:221px;
     background-position: center;
     background-size: cover;
-    background-image:url('img/tokyo.jpg')
   }
-.animated:nth-child(2){
-  background-image:url('img/japan.jpg')
 
-}
-.animated:nth-child(3){
-  background-image:url('img/ecuador.jpg')
-
-}
+  .leftFades{
+  opacity: 0;
+  }
+  
   .fadeInLeft{
     -webkit-animation: fadeInLeft 1.2s both;
     -moz-animation: fadeInLeft 1.2s both;
     -o-animation: fadeInLeft 1.2s both;
     animation: fadeInLeft 1.2s both;
+
   }
   @-webkit-keyframes fadeInLeft{
     0%{
@@ -406,11 +410,45 @@ transform: rotate(-45deg) translate(-5px,6px);
       transform: translateX(0);
     }
   }
+  .rightFades{
+    opacity: 0;
+  }
   .fadeInRight{
     -webkit-animation: fadeInRight 1.2s both;
     -moz-animation: fadeInRight 1.2s both;
     -o-animation: fadeInRight 1.2s both;
     animation: fadeInRight 1.2s both;
+
+  }
+  @-webkit-keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  @-moz-keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      -moz-transform: translateX(100px);
+    }
+    100%{
+      opacity: 1;
+      -moz-transform: translateX(0);
+    }
+  }
+  @-o-keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      -o-transform: translateX(100px);
+    }
+    100%{
+      opacity: 1;
+      -o-transform: translateX(0);
+    }
   }
   @keyframes fadeInRight{
     0%{
@@ -427,6 +465,8 @@ transform: rotate(-45deg) translate(-5px,6px);
     -moz-animation: fadeInTop 1.2s both;
     -o-animation: fadeInTop 1.2s both;
     animation: fadeInTop 1.2s both;
+    background-image:url('img/ecuador.jpg')
+
   }
   @keyframes fadeInTop{
     0%{

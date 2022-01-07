@@ -1,18 +1,41 @@
-const animated = document.querySelectorAll(".animated")
-const observer = new IntersectionObserver(entries =>{
-    console.log(entries)
+const leftFade = document.querySelectorAll(".leftFades")
+const rightFade = document.querySelectorAll(".rightFades")
+
+const observerRight= new IntersectionObserver(entries =>{
     entries.forEach(entry => {
+        
+           entry.target.classList.toggle("fadeInRight", entry.isIntersecting)
+           
         if(entry.isIntersecting){
-            document.querySelectorAll(".animated")[0].classList.add("fadeInLeft");
-            document.querySelectorAll(".animated")[1].classList.add("fadeInTop");
-            document.querySelectorAll(".animated")[2].classList.add("fadeInRight");
-    
+            observerRight.unobserve(entry.target)
         }
-    })
-    })
     
-    observer.observe(document.querySelector(".container-fluid"));
-    observer.observe(animated[0])
+    })
+},{ threshold: .5,
+})
+rightFade.forEach(rightFades =>{
+    observerRight.observe(rightFades)
+})
+
+const observer= new IntersectionObserver(entries =>{
+    entries.forEach(entry => {
+        
+           entry.target.classList.toggle("fadeInLeft", entry.isIntersecting)
+           
+        if(entry.isIntersecting){
+            observer.unobserve(entry.target)
+        }
+    
+    })
+    console.log(entries)
+},{ threshold: .5,
+})
+
+leftFade.forEach(leftFades =>{
+    observer.observe(leftFades)
+})
+
+
 
 function flipCard(){
     this.classList.toggle('is-flipped');
@@ -45,7 +68,7 @@ const navSlide = () =>{
              }
         });
         //Burger
-        burger.classList.toggle('tog gle');
+        burger.classList.toggle('toggle');
     
     });
  
