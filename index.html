@@ -30,7 +30,7 @@
           <a href="#">Projects</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
 
       </ul> 
@@ -191,7 +191,7 @@
     </div>
 
     <div class="container ">
-      <div class="row mt-5">
+      <div class="row mt-5 leftFades">
         <div class="col-6">
           <h1 class="display-4"> Services </h1>
 
@@ -201,11 +201,11 @@
 
         </div>
       </div>
-      <div class="row mt-4">
+      <div class="row mt-4 rightFades">
         <div class="col-md-4 mt-2">
           <img src="svg/paint-bucket.svg" alt="paint" class="hoverAnim ftlogo">
           <h2>Interior Painting</h2>
-          <p class="paragraph leftFades">A&D Construction specializes in professional interior painting, 
+          <p class="paragraph ">A&D Construction specializes in professional interior painting, 
             decorating and wallpaper services.
 
             Meticulous surface preparation ensures 
@@ -228,7 +228,7 @@
         <div class="col-md-4 mt-2">
           <img src="svg/rulers.svg" alt="ruler" class="hoverAnim ftlogo">
           <h2>Carpentry</h2>
-          <p class="paragraph rightFades">Our customers tell us what they need. If we’re framing for you, you likely need 
+          <p class="paragraph ">Our customers tell us what they need. If we’re framing for you, you likely need 
             carpentry. From window installation to base molding installation. 
             We can finish any type of interior job for you.​</p>
 
@@ -237,12 +237,18 @@
     </div>
     <div class="container-fluid">
       <div class="row">
+        <h1 class="text-center display-4 mt-3">Projects</h1>
+        <div class="col-12 text-center">
+          <div class="btn buttonClass mt-2">View More Projects</div>
+
+        </div>
         <div class="col-lg-4">
+          <h3 class="text-center mt-5">Litchfield Project</h3>
           <div class="card">
             <div class="card__inner" id="cardBryan">
                 <div class="card__face ">
                   <div class="cardContainer">
-                    <img src="img/city.jpg" style="height: 450px; object-fit: cover;">
+                    <img src="img/litchfield/before1.jpg" style="height: 450px; object-fit: cover;">
                     <div class="top-left">Before</div>
   
                   </div>
@@ -251,7 +257,7 @@
                 <div class="card__face card__faceBack">
                     <div class="card__content">
                       <div class="cardContainer">
-                        <img src="img/ecuador.jpg" style="height: 450px; object-fit: cover;">
+                        <img src="img/litchfield/after4.jpg" style="height: 450px; object-fit: cover;">
                         <div class="top-left">After</div>
       
                       </div>
@@ -261,11 +267,13 @@
         </div>
         </div>
         <div class="col-lg-4">
+          <h3 class="text-center mt-5">Torrington Project</h3>
+
           <div class="card " >
             <div class="card__inner"  id="cardTwo">
                 <div class="card__face " >
                   <div class="cardContainer">
-                    <img src="img/city.jpg" style="height: 450px; object-fit: cover;">
+                    <img src="img/torrington/Before1.jpg" style="height: 450px; object-fit: cover;">
                     <div class="top-left">Before</div>
   
                   </div>
@@ -274,7 +282,7 @@
                 <div class="card__face card__faceBack">
                     <div class="card__content">
                       <div class="cardContainer">
-                        <img src="img/ecuador.jpg" style="height: 450px; object-fit: cover;">
+                        <img src="img/torrington/after1.jpg" style="height: 450px; object-fit: cover;">
                         <div class="top-left">After</div>
       
                       </div>
@@ -284,11 +292,13 @@
         </div>
         </div>
         <div class="col-lg-4">
+          <h3 class="text-center mt-5">NYC Project</h3>
+
           <div class="card">
             <div class="card__inner" id="cardThree">
                 <div class="card__face ">
                   <div class="cardContainer">
-                    <img src="img/city.jpg" style="height: 450px; object-fit: cover;">
+                    <img src="img/nyc/before.JPG" style="height: 450px; object-fit: cover;">
                     <div class="top-left">Before</div>
   
                   </div>
@@ -297,7 +307,7 @@
                 <div class="card__face card__faceBack">
                     <div class="card__content">
                       <div class="cardContainer">
-                        <img src="img/ecuador.jpg" style="height: 450px; object-fit: cover;">
+                        <img src="img/nyc/after1.JPG" style="height: 450px; object-fit: cover;">
                         <div class="top-left">After</div>
       
                       </div>
@@ -308,18 +318,10 @@
         </div>
       </div>
     </div>
-    <section id="contact">
-      <div class="container-fluid mt-3 imageCon ">
-        <div class="row">
-          <div class="animated text-start m-2"></div>
-          <div class="animated text-center m-2"></div>
-          <div class="animated  text-end m-2"></div>
-        </div>
-    </section>
+   
 
   
 
-</div>
     <footer class="cssFooter">
     <div class="container-fluid">
       <div class="row ">
@@ -378,6 +380,8 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="card.js"></script>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
