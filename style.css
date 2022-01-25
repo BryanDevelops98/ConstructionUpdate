@@ -471,18 +471,50 @@ transform: rotate(-45deg) translate(-5px,6px);
       transform: translateX(0);
     }
   }
-  .fadeInTop{
-    -webkit-animation: fadeInTop 1.2s both;
-    -moz-animation: fadeInTop 1.2s both;
-    -o-animation: fadeInTop 1.2s both;
-    animation: fadeInTop 1.2s both;
-    background-image:url('img/ecuador.jpg')
+  .bottomFades{
+    opacity: 0;
+  }
+  .fadeInBottom{
+    -webkit-animation: fadeInBottom 1.2s both;
+    -moz-animation: fadeInBottom 1.2s both;
+    -o-animation: fadeInBottom 1.2s both;
+    animation: fadeInBottom 1.2s both;
 
   }
-  @keyframes fadeInTop{
+  @-webkit-keyframes fadeInBottom{
     0%{
       opacity: 0;
-      transform: translateY(-100px);
+      -webkit-transform: translateY(100px);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @-moz-keyframes fadeInBottom{
+    0%{
+      opacity: 0;
+      -moz-transform: translateY(100px);
+    }
+    100%{
+      opacity: 1;
+      -moz-transform: translateY(0);
+    }
+  }
+  @-o-keyframes fadeInBottom{
+    0%{
+      opacity: 0;
+      -o-transform: translateY(100px);
+    }
+    100%{
+      opacity: 1;
+      -o-transform: translateY(0);
+    }
+  }
+  @keyframes fadeInBottom{
+    0%{
+      opacity: 0;
+      transform: translateY(100px);
     }
     100%{
       opacity: 1;
