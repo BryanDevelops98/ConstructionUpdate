@@ -1,6 +1,7 @@
 const leftFade = document.querySelectorAll(".leftFades")
 const rightFade = document.querySelectorAll(".rightFades")
 const bottomFade = document.querySelectorAll(".bottomFades")
+const insideFade = document.querySelectorAll(".insideFades")
 
 
 const observerRight= new IntersectionObserver(entries =>{
@@ -17,6 +18,22 @@ const observerRight= new IntersectionObserver(entries =>{
 })
 rightFade.forEach(rightFades =>{
     observerRight.observe(rightFades)
+})
+
+const observerIn= new IntersectionObserver(entries =>{
+    entries.forEach(entry => {
+        
+           entry.target.classList.toggle("fadeIn", entry.isIntersecting)
+           
+        if(entry.isIntersecting){
+            observerIn.unobserve(entry.target)
+        }
+    
+    })
+},{ threshold: .3,
+})
+insideFade.forEach(insideFades =>{
+    observerIn.observe(insideFades)
 })
 
 const observerBottom= new IntersectionObserver(entries =>{
@@ -75,7 +92,7 @@ const navSlide = () =>{
             link.style.animation='';
         }
         else{
-            link.style.animation= `navLinkFade 0.5s ease forwards ${index / 3 + .5}s`;
+            link.style.animation= `navLinkFade 0.5s ease forwards ${index / 3 + .3}s`;
 
              }
         });
