@@ -46,7 +46,7 @@ const observerBottom= new IntersectionObserver(entries =>{
         }
     
     })
-},{ threshold: .5,
+},{ threshold: .3,
 })
 bottomFade.forEach(bottomFades =>{
     observerBottom.observe(bottomFades)
@@ -105,5 +105,6 @@ const navSlide = () =>{
 }
 
 navSlide(); 
+
 
 

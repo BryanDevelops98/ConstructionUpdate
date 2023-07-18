@@ -17,7 +17,7 @@ body{
 }
 .aLinks{
 text-decoration: none;
-color: #0072bd;
+color: #ED9321;
 }
 
 nav{
@@ -29,7 +29,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:#F8F8F8;
+    background-color:#6E0E10;
     box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2);
 
 }
@@ -37,7 +37,7 @@ nav{
 .logo{
   margin-top: .5rem;
   font-size: 20px;
-  color: #0072bd;
+  color: #ED9321;
   font-weight: bold;
 }
 .nav-links{
@@ -49,14 +49,14 @@ nav{
 .nav-links :hover{
     transform: scale(1.1,1.1);
     transition: transform .25s;
-    color:#0072bd;
+    color:#ED9321;
     font-weight:bold  ;
 }
 .nav-links li{
     list-style: none;
 }
 .nav-links a{
-    color: #0072bd;
+    color: #ED9321;
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 16px;
@@ -70,7 +70,7 @@ nav{
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #0072bd;
+    background-color: #ED9321;
     transition: all 0.4s ease-in;
 }
 
@@ -162,9 +162,7 @@ transform: rotate(-45deg) translate(-5px,6px);
 
    .buttonClass{
     color: white;
-    background-color: #0072bd;
-    border-color: #0072bd;
-  
+    background-color: #6E0E10;  
   }
   .buttonClass:hover{
     
@@ -355,7 +353,7 @@ transform: rotate(-45deg) translate(-5px,6px);
 
       .cssFooter{
    
-        background-color:black; 
+        background-color:#6E0E10; 
         background-blend-mode: darken;
       
         position: relative;
@@ -638,7 +636,7 @@ transform: translateY(-20px);
 .contactForm .inputBox input[type="submit"]
 {
     width: 100px;
-    background: #0072bd;
+    background: #6E0E10;
     color: #fff;
     border: none;
     cursor: pointer;
